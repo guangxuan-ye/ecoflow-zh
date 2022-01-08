@@ -124,7 +124,7 @@
                         height="62"
                         class="mx-auto mb-2"
                         />
-                        <span style="display:inline-block" class="mb-2">{{item.text}}</span>
+                        <span style="display:inline-block" class="mb-2">{{item.text}}</span><br/>
                         <span>{{item.subText}}</span>
                     </div>
                   </div>
@@ -156,15 +156,15 @@
                     <p class="pro_subtitle mt-n2 mb-6">太阳能板系列</p>
 
                     <div class="d-flex flex-wrap justify-space-evenly">
-                      <div v-for="(item,idx) in panels" :key="idx" style="width: 13%" class="en_title cla_text text-center d-flex flex-column mr-10 mb-6">
+                      <div v-for="(item,idx) in panels" :key="idx" style="width: 20%" class="en_title cla_text text-center mb-6">
                         <v-img
                           :src='item.src[0]'
                           contain
                           max-width="62"
                           height="62"
                           class="mx-auto mb-2"
-                          />
-                          <span>{{item.text}}</span>
+                        />
+                        <span style="display:inline-block">{{item.text}}</span>
                       </div>
                     </div>
                     <router-link :to="{path: '/productCenter#fit'}">
