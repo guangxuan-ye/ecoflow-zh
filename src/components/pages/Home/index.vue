@@ -95,7 +95,7 @@
                 </div>
                 <!-- 了解更多 -->
                 <div class="pl-6">
-                  <router-link :to="{path: '/delta'}">
+                  <router-link :to="{path: '/deltaproduct'}">
                     <span class="ch_title d-block h6 black--text text--lighten-1 mt-8">了解更多 &gt;</span>
                   </router-link>
                 </div>

@@ -155,12 +155,12 @@ export default {
       { cont: '产品中心', name: 'productCenter' },
       { cont: '下载中心', name: 'downloads' },
       { cont: '校园招聘', name: 'jobs' },
-      { cont: '联系我们', name: 'contact' },
+      { cont: '联系我们', name: 'contact' }
       // { cont: '技术支持', name: 'support' }
     ],
     items: [
       { title: '京东', link: 'http://mtw.so/6lGwv6', imgs: 'imagesw-off' },
-      { title: '天猫', link: 'http://mtw.so/5YrSSA', imgs: 'images-off'}
+      { title: '天猫', link: 'http://mtw.so/5YrSSA', imgs: 'images-off' }
     ],
     activeTab: 1,
     brandStoryItems: [
@@ -175,7 +175,7 @@ export default {
     ],
     contactItems: [
       { title: '公司地址', name: 'contact', hash: 'address' },
-      { title: '常见问题', name: 'contact', hash: 'FQA' },
+      { title: '常见问题', name: 'contact', hash: 'FQA' }
       // { title: '留言反馈', name: 'contact', hash: 'mess' }
     ],
     jobslItems: [
@@ -195,22 +195,22 @@ export default {
       sessionStorage.setItem('actTab', idx + 1)
     },
     childTabJump (page, hash) {
-      console.log(page,hash)
+      console.log(page, hash)
       if (page === 'support') {
         window.location.href = 'https://after-sales-h5.ecoflow.com'
       } else if (page === 'jobs') {
         if (hash === 'school') {
-          window.open('http://campus.51job.com/ecoflow/','_blank')
+          window.open('http://campus.51job.com/ecoflow/', '_blank')
         } else {
-          window.open('https://video.51job.com/watch/2567818','_blank')
+          window.open('https://video.51job.com/watch/2567818', '_blank')
         }
-      } else if(page == 'productCenter'){
-          if(hash=='fit'){
-             this.$router.push({ path: '/' + page + '#' + hash })
-          }else{
-             this.$router.replace({path:hash, replace: true})
-          }
-      }else {
+      } else if (page === 'productCenter') {
+        if (hash === 'fit') {
+          this.$router.push({ path: '/' + page + '#' + hash })
+        } else {
+          this.$router.replace({ path: hash, replace: true })
+        }
+      } else {
         this.$router.push({ path: '/' + page + '#' + hash })
       }
     }
@@ -245,15 +245,15 @@ export default {
   display: block;
 
 }
-.shops-jd{ 
+.shops-jd{
   background: url('../../assets/img/home/imagesw-off.png');
   background-size:100% 100%
   }
-.shops-tm{ 
+.shops-tm{
   margin-top: 10px;
   background: url('../../assets/img/home/images-off.png');
   background-size:100% 100%
-  } 
+}
 .v-application .links:hover .shops-jd{
    background: url('../../assets/img/home/imagesw.png');
     background-size:100% 100%
