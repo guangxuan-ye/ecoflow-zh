@@ -3,13 +3,13 @@
     <div class="deltaContain">
       <!-- 展示1 -->
       <v-card
-        class="scro_anima_delta delNew d-flex justify-space-between"
+        class="scro_anima_river delNew d-flex justify-space-between"
         outlined
       >
         <!-- left -->
         <div class="delproLeft d-flex justify-space-between">
           <v-img
-            src='@/assets/img/deltaSeries/delproLeft.png'
+            src='@/assets/img/riverSeries/riverLeft.png'
             height="150"
             max-width="220"
             contain
@@ -18,7 +18,7 @@
           </v-img>
           <div class="leftInfoMsg ml-6">
             <span class="newproduct mb-1">[新品上市]</span>
-            <span class="delname mb-1">德 DELTA Pro</span>
+            <span class="delname mb-1">睿 RIVER MAX PLUS</span>
             <span class="deldescribe mb-4">【核心快充技术】真快充1.6小时充满，不伤电池。高效版升级不加价，巨容量更持久，多输出接口，纯正弦波，8重安全防护，适用户外露营车载自驾游应急储能用电</span>
             <span class="delMore">了解详情 <img src="@/assets/img/deltaSeries/go.png"/></span>
           </div>
@@ -26,7 +26,7 @@
         <!-- right -->
         <div class="delproRight">
           <v-img
-            src='@/assets/img/deltaSeries/delproRight.png'
+            src='@/assets/img/riverSeries/riverRight.png'
             height="300"
             max-width="450"
             contain
@@ -37,43 +37,43 @@
       <!-- 展示二 -->
       <div class="d-flex justify-space-between mt-10 mb-10">
         <v-card
-          class="delBig scro_anima_delta_2"
+          class="delBig scro_anima_river_2"
           outlined>
           <v-img
-            src='@/assets/img/deltaSeries/delbig.png'
+            src='@/assets/img/riverSeries/riverBig.png'
             height="205"
             max-width="300"
             contain
             class="item mb-6"
           >
           </v-img>
-          <span style="font-size:24px">德 DELTA</span>
+          <span style="font-size:24px">睿 RIVER mini</span>
           <span style="font-size:18px;cursor:pointer" class="mb-6">了解详情</span>
         </v-card>
         <v-card
-          class="delBig scro_anima_delta_2"
+          class="delBig scro_anima_river_2"
           outlined>
           <v-img
-            src='@/assets/img/deltaSeries/delbig.png'
+            src='@/assets/img/riverSeries/riverBig.png'
             height="205"
             max-width="300"
             contain
             class="item mb-6"
           >
           </v-img>
-          <span style="font-size:24px">德 DELTA</span>
+          <span style="font-size:24px">睿 RIVER mini</span>
           <span style="font-size:18px;cursor:pointer" class="mb-6">了解详情</span>
         </v-card>
       </div>
       <!-- 展示三 -->
       <v-card
-        class="scro_anima_delta_3 delNew d-flex justify-space-between"
+        class="scro_anima_river_3 delNew d-flex justify-space-between"
         outlined
       >
         <!-- left -->
         <div class="delproLeft d-flex justify-space-between">
           <v-img
-            src='@/assets/img/deltaSeries/delproLeft.png'
+            src='@/assets/img/riverSeries/riverLeft.png'
             height="150"
             max-width="220"
             contain
@@ -82,7 +82,7 @@
           </v-img>
           <div class="leftInfoMsg ml-6">
             <span class="newproduct mb-1">[新品上市]</span>
-            <span class="delname mb-1">德 DELTA Pro</span>
+            <span class="delname mb-1">睿 RIVER MAX PLUS</span>
             <span class="deldescribe mb-4">【核心快充技术】真快充1.6小时充满，不伤电池。高效版升级不加价，巨容量更持久，多输出接口，纯正弦波，8重安全防护，适用户外露营车载自驾游应急储能用电</span>
             <span class="delMore">了解详情 <img src="@/assets/img/deltaSeries/go.png"/></span>
           </div>
@@ -90,7 +90,7 @@
         <!-- right -->
         <div class="delproRight">
           <v-img
-            src='@/assets/img/deltaSeries/delproRight.png'
+            src='@/assets/img/riverSeries/riverRight.png'
             height="300"
             max-width="450"
             contain
@@ -103,14 +103,14 @@
 </template>
 <script>
 export default {
-  name: 'DeltaSeries',
+  name: 'riverSeries',
   data () {
     return {
-      msg: 'delta'
+      msg: 'river'
     }
   },
   mounted () {
-    this.animationDelta()
+    this.animationRiver()
   }
 }
 </script>
