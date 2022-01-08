@@ -18,7 +18,7 @@
       >
       </v-carousel-item>
     </v-carousel>
-    <div style="padding-bottom: 120px" class="text-center d-flex flex-column align-center">
+    <div style="padding-bottom: 120px;width:100%" class="text-center d-flex flex-column align-center">
       <div style="width: 80%" class="mt-16">
           <v-row class="text-center">
             <v-col>
@@ -26,7 +26,7 @@
                多场景应用 探索无限可能
               </p>
               <div class="d-inline-block mb-6" style="width: 50px;border: 2px #0BB7B3 solid"></div>
-              <div class="d-flex flex-wrap justify-center">
+              <div class="d-flex  justify-center">
                 <v-card
                   class="scro_anima border mx-3"
                   max-width="344"
@@ -47,59 +47,76 @@
             </v-col>
           </v-row>
       </div>
-      <div style="width: 75%" class="mt-16">
+      <div style="width: 80%" class="mt-16">
         <v-row class="text-center">
           <v-col>
             <h2 class="font-weight-bold mb-6 theme_title">
               哪款户外移动电源适合你
             </h2>
             <div class="d-inline-block mb-6" style="width: 50px;border: 2px #0BB7B3 solid"></div>
+            <!-- 产品展示 -->
             <div class="d-flex justify-center flex-wrap">
+              <!-- 德系列 -->
               <v-card
-                class="scro_anima text-left d-flex flex-row align-center py-6 mr-6 border rounded-sm"
+                class="scro_anima text-left py-6 mr-6 border rounded-sm"
                 style="background: #F7F7F8"
                 width="48%"
                 outlined
               >
-                <div class="pa-6" style="width: 50%">
+                <!-- 标题 -->
+                <div class="pa-6">
                   <span class="des ch_title">大功率移动储能电站</span>
                   <p class="pro_subtitle mt-n2 mb-6">德 DELTA 系列</p>
-                  <div class="d-flex flex-wrap justify-space-between">
-                    <div v-for="(item,idx) in delta" :key="idx" style="width: 50%" class="en_title cla_text text-center d-flex flex-column mx-auto mb-6">
+                </div>
+                <!-- 产品 -->
+                <div class="pa-6 d-flex align-center" style="width: 100%">
+                  <!-- 左 -->
+                  <div class="d-flex flex-wrap justify-space-between" style="width: 50%">
+                    <div v-for="(item,idx) in delta" :key="idx" style="width: 50%" class="en_title cla_text text-center mx-auto mb-6">
                       <v-img
                         :src='item.src[0]'
                         contain
                         max-width="62"
                         height="62"
                         class="mx-auto mb-2"
-                        />
-                        <span>{{item.text}}</span>
-                        <span>{{item.subText}}</span>
+                      />
+                      <span style="display:inline-block" class="mb-2">{{item.text}}</span><br/>
+                      <span>{{item.subText}}</span>
                     </div>
                   </div>
+                  <!-- 右 -->
+                  <div class="product" style="width: 50%">
+                    <v-img
+                      src='@/assets/img/home/delta.png'
+                      contain
+                      class="item"
+                    />
+                  </div>
+                </div>
+                <!-- 了解更多 -->
+                <div class="pl-6">
                   <router-link :to="{path: '/delta'}">
                     <span class="ch_title d-block h6 black--text text--lighten-1 mt-8">了解更多 &gt;</span>
                   </router-link>
                 </div>
-                <div class="product" style="width: 50%">
-                  <v-img
-                    src='@/assets/img/home/delta.png'
-                    contain
-                    class="item"
-                  />
-                </div>
               </v-card>
+              <!-- 睿系列 -->
               <v-card
-                class="scro_anima_2 d-flex flex-row align-center text-left py-6 border rounded-sm"
+                class="scro_anima_2 text-left py-6 border rounded-sm"
                 style="background: #F7F7F8"
                 width="48%"
                 outlined
               >
-                <div class="pa-6 mr-2" style="width: 48%">
+                <!-- 标题 -->
+                <div class="pa-6">
                   <span class="des ch_title">便携式智能户外电源</span>
                   <p class="pro_subtitle mt-n2 mb-6">睿 RIVER 系列</p>
-                  <div class="d-flex flex-wrap justify-space-evenly">
-                    <div v-for="(item,idx) in river" :key="idx" style="width: 50%" class="en_title cla_text text-center d-flex flex-column mb-6">
+                </div>
+                <!-- 产品 -->
+                <div class="pa-6  d-flex align-center" style="width: 100%">
+                  <!-- 左 -->
+                  <div  class="d-flex flex-wrap justify-space-between" style="width: 50%">
+                    <div v-for="(item,idx) in river" :key="idx" style="width: 50%" class="en_title cla_text text-center mx-auto mb-6">
                       <v-img
                         :src='item.src[0]'
                         contain
@@ -107,22 +124,27 @@
                         height="62"
                         class="mx-auto mb-2"
                         />
-                        <span>{{item.text}}</span>
+                        <span style="display:inline-block" class="mb-2">{{item.text}}</span>
                         <span>{{item.subText}}</span>
                     </div>
                   </div>
+                  <!-- 右 -->
+                  <div class="product" style="width: 50%">
+                    <v-img
+                      src='@/assets/img/home/river600.png'
+                      class="item"
+                      contain
+                    />
+                  </div>
+                </div>
+                <!-- 了解更多 -->
+                <div class="pl-6">
                   <router-link :to="{path: '/river'}">
                     <span  class="ch_title d-block h6 black--text text--lighten-1 mt-8">了解更多 &gt;</span>
                   </router-link>
                 </div>
-                <div class="product"  style="width: 50%">
-                  <v-img
-                    src='@/assets/img/home/river600.png'
-                    class="my-3 item"
-                    contain
-                  />
-                </div>
               </v-card>
+              <!-- 太阳能板系列 -->
               <v-card
                 class="scro_anima_3 mx-auto d-flex flex-row align-center mt-6 border text-left py-6"
                 style="background: #F7F7F8"
@@ -162,7 +184,6 @@
         </v-row>
       </div>
     </div>
-
   </v-container>
 </template>
 
@@ -188,7 +209,7 @@ export default {
   },
   data: () => ({
     items: [
-       {
+      {
         src: [require('@/assets/img/home/banner.jpg')],
         link: 'https://cn.ecoflow.com/delta'
       },
@@ -201,11 +222,11 @@ export default {
       // },
       {
         src: [require('@/assets/img/home/banner2.jpg')],
-         link: 'https://cn.ecoflow.com/delta'
+        link: 'https://cn.ecoflow.com/delta'
       },
       {
         src: [require('@/assets/img/home/banner3.jpg')],
-         link: 'https://cn.ecoflow.com/delta'
+        link: 'https://cn.ecoflow.com/delta'
       }
     ],
     delta: [

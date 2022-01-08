@@ -23,7 +23,9 @@ module.exports = {
       deleteOriginalAssets: false
     }))
   },
-
+  devServer: {
+    inline: true
+  },
   pluginOptions: {
     prerenderSpa: {
       registry: undefined,
