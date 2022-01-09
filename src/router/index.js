@@ -126,6 +126,11 @@ const router = new Router({
         import('../components/pages/MobileViews/Product.vue')
     },
     {
+      path: '/m_deltaproduct',
+      component: () =>
+        import('../components/pages/MobileViews/deltaProduct.vue')
+    },
+    {
       path: '/m_contact', // 联系
       name: 'm_contact',
       component: () =>
