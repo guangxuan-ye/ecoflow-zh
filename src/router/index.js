@@ -53,6 +53,11 @@ const router = new Router({
         import('../components/pages/deltaSeries/index.vue')
     },
     {
+      path: '/deltadetail',
+      component: () =>
+        import('../components/pages/deltaDetail/detailIndex.vue')
+    },
+    {
       path: '/river', // river系列参数
       component: () =>
         import('../components/pages/river/index.vue')
