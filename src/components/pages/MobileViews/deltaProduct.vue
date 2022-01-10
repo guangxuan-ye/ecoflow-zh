@@ -4,7 +4,7 @@
       <img class="productImg" src="@/assets/img/deltaSeries/delbig.png" alt="">
       <span class="nameproduct">[新品上市]</span>
       <span class="titleproduct">德 DELTA</span>
-      <span class="delMoreproduct">了解详情 <img src="@/assets/img/deltaSeries/go.png"/></span>
+      <span class="delMoreproduct" @click="godetail()">了解详情 <img src="@/assets/img/deltaSeries/go.png"/></span>
     </div>
   </div>
 </template>
@@ -14,6 +14,11 @@ export default {
   data () {
     return {
 
+    }
+  },
+  methods: {
+    godetail () {
+      this.$router.push('/m_deltadetail')
     }
   }
 }
