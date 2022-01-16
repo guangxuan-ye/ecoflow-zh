@@ -124,11 +124,11 @@ export default {
           title: '空中宣讲会',
           index: 'm_speech'
         },
-               {
+        {
           title: '天猫旗舰店',
           index: 'm_tm'
         },
-         {
+        {
           title: '京东旗舰店',
           index: 'm_jd'
         },

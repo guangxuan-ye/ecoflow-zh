@@ -51,11 +51,11 @@ export default {
         },
         {
           title: '德 DELTA系列',
-          index: 'm_product#delta'
+          index: 'm_deltaproduct'
         },
         {
           title: '睿 RIVER系列',
-          index: 'm_product#river'
+          index: 'm_riverproduct'
         },
         {
           title: '下载中心',
@@ -69,11 +69,11 @@ export default {
           title: '空中宣讲会',
           index: 'm_speech'
         },
-         {
+        {
           title: '天猫旗舰店',
           index: 'm_tm'
         },
-         {
+        {
           title: '京东旗舰店',
           index: 'm_jd'
         },
@@ -106,9 +106,9 @@ export default {
         window.location.href = 'https://video.51job.com/watch/2567818'
       } else if (routerName === 'm_tm') {
         window.location.href = 'http://mtw.so/5v33K8'
-      }  else if (routerName === 'm_jd') {
+      } else if (routerName === 'm_jd') {
         window.location.href = 'http://mtw.so/5JptAg'
-      }  else {
+      } else {
         this.$emit('changePage', routerName)
         this.goRouter(routerName)
       }

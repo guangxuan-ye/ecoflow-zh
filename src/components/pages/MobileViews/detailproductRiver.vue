@@ -28,7 +28,7 @@
     </div>
     <div class="detailInfo">
       <div class="detailMsg">
-        <span class="msgName">德 DELTA mini</span>
+        <span class="msgName">RIVER</span>
         <span class="msgDes">【核心快充技术】真快充1.6小时充满，不伤电池。高效版升级不加价，巨容量更持久，多输出接口，纯正弦波，8重安全防护，适用户外露营车载自驾游应急储能用电</span>
         <span class="msgIntrduce">·  882Wh容量，大能量</span>
         <span class="msgIntrduce">·  X-Stream闪电快充技术，1.6小时充满</span>
@@ -40,9 +40,9 @@
       </div>
       <v-divider class="divider"></v-divider>
       <div class="addbtnContain">
-        <span class="halfbtn"><img src="@/assets/img/deltaSeries/shopicon.png"/>天猫购物</span>
-        <span class="halfbtn"><img src="@/assets/img/deltaSeries/shopicon.png">京东购买</span>
-        <span class="totalbtn"><img src="@/assets/img/deltaSeries/pdficon.png">说明书下载</span>
+        <span class="halfbtn" @click="goTianmao()"><img src="@/assets/img/deltaSeries/shopicon.png"/>天猫购物</span>
+        <span class="halfbtn" @click="goJingdong()"><img src="@/assets/img/deltaSeries/shopicon.png">京东购买</span>
+        <span class="totalbtn" @click="download()"><img src="@/assets/img/deltaSeries/pdficon.png">说明书下载</span>
       </div>
     </div>
     <!-- 功能详情 -->
@@ -297,7 +297,7 @@ export default {
           link: 'https://cn.ecoflow.com/delta'
         }
       ],
-      activeNum:1, // active页面
+      activeNum: 1, // active页面
       sets: [
         {
           label: '功能特征'
@@ -313,8 +313,17 @@ export default {
     }
   },
   methods: {
-    changeCar(number) {
+    changeCar (number) {
       this.activeNum = number + 1
+    },
+    goTianmao () {
+      window.open('http://mtw.so/5YrSSA', '_blank')
+    },
+    goJingdong () {
+      window.open('http://mtw.so/6lGwv6', '_blank')
+    },
+    download () {
+      window.open('https://cn.ecoflow.com/download/' + '睿 RIVER mini-说明书' + '-V0.1.pdf', '_blank')
     }
   }
 }

@@ -132,13 +132,25 @@ const router = new Router({
     },
     {
       path: '/m_deltaproduct',
+      name: 'm_deltaproduct',
       component: () =>
         import('../components/pages/MobileViews/deltaProduct.vue')
     },
     {
+      path: '/m_riverproduct',
+      name: 'm_riverproduct',
+      component: () =>
+        import('../components/pages/MobileViews/riverProduct.vue')
+    },
+    {
       path: '/m_deltadetail',
       component: () =>
-        import('../components/pages/MobileViews/detailproduct.vue')
+        import('../components/pages/MobileViews/detailproductDelta.vue')
+    },
+    {
+      path: '/m_riverdetail',
+      component: () =>
+        import('../components/pages/MobileViews/detailproductRiver.vue')
     },
     {
       path: '/m_contact', // 联系

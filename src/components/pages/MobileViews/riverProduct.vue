@@ -1,16 +1,16 @@
 <template>
   <div class="mproduct">
     <div class="productItem" v-for="i in 10">
-      <img @click="godetail()" class="productImg" src="@/assets/img/deltaSeries/delbig.png" alt="">
+      <img  @click="godetail()" class="productImg" src="@/assets/img/riverSeries/riverLeft.png" alt="">
       <span class="nameproduct">[新品上市]</span>
-      <span class="titleproduct">德 DELTA</span>
+      <span class="titleproduct">RIVER</span>
       <span class="delMoreproduct" @click="godetail()">了解详情 <img src="@/assets/img/deltaSeries/go.png"/></span>
     </div>
   </div>
 </template>
 <script>
 export default {
-  name: 'm_deltaproduct',
+  name: 'm_riverproduct',
   data () {
     return {
 
@@ -18,7 +18,7 @@ export default {
   },
   methods: {
     godetail () {
-      this.$router.push('/m_deltadetail')
+      this.$router.push('/m_riverdetail')
     }
   }
 }
