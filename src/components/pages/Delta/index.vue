@@ -23,23 +23,29 @@
           <v-row class="line py-16">
             <v-col :cols="2" class="pro_subtitle zh_title">外观</v-col>
             <v-col>
-              <v-img src="@/assets/img/params/DELTA mini.png" contain width="160" height="250" />
-               <a href="http://mtw.so/5v33m6" target="_blank"><v-btn depressed style="margin-left:40px;margin-top:50px;background:#333;color:#fff" >立即购买</v-btn></a>
+              <v-img style="cursor:pointer" @click="godetail()" src="@/assets/img/params/DELTA mini.png" contain width="160" height="250" />
+              <a href="http://mtw.so/5v33m6" target="_blank"><v-btn depressed style="margin-left:40px;margin-top:50px;background:#333;color:#fff" >立即购买</v-btn></a>
+              <span @click="godetail()" style="display:inline-block;margin-left:50px;margin-top:20px;cursor:pointer">了解详情</span>
             </v-col>
             <v-col>
-              <v-img src="@/assets/img/params/delta.png" contain width="160" height="250" />
+              <v-img style="cursor:pointer" @click="godetail()" src="@/assets/img/params/delta.png" contain width="160" height="250" />
+              <a href="http://mtw.so/5v33m6" target="_blank"><v-btn depressed style="margin-left:40px;margin-top:50px;background:#333;color:#fff" >立即购买</v-btn></a>
+              <span @click="godetail()" style="display:inline-block;margin-left:50px;margin-top:20px;cursor:pointer">了解详情</span>
             </v-col>
             <v-col>
-              <v-img src="@/assets/img/params/delta.png" contain width="160" height="250" />
-               <a href="http://mtw.so/5YrTnS" target="_blank"><v-btn depressed style="margin-left:30px;margin-top:40px;background:#333;color:#fff" >立即购买</v-btn></a>
+              <v-img style="cursor:pointer" @click="godetail()" src="@/assets/img/params/delta.png" contain width="160" height="250" />
+              <a href="http://mtw.so/5YrTnS" target="_blank"><v-btn depressed style="margin-left:30px;margin-top:40px;background:#333;color:#fff" >立即购买</v-btn></a>
+              <span @click="godetail()" style="display:inline-block;margin-left:50px;margin-top:20px;cursor:pointer">了解详情</span>
             </v-col>
             <v-col>
-              <v-img src="@/assets/img/params/DELTA Max.png" contain width="130" height="250" />
-               <a href="http://mtw.so/6lGwZK" target="_blank"><v-btn depressed style="margin-left:20px;margin-top:40px;background:#333;color:#fff" >立即购买</v-btn></a>
+              <v-img style="cursor:pointer" @click="godetail()" src="@/assets/img/params/DELTA Max.png" contain width="130" height="250" />
+              <a href="http://mtw.so/6lGwZK" target="_blank"><v-btn depressed style="margin-left:20px;margin-top:40px;background:#333;color:#fff" >立即购买</v-btn></a>
+              <span @click="godetail()" style="display:inline-block;margin-left:50px;margin-top:20px;cursor:pointer">了解详情</span>
             </v-col>
              <v-col>
-              <v-img src="@/assets/img/params/DELTA Pro.jpg" contain width="150" height="250" />
-               <a href="http://mtw.so/65XGKR" target="_blank"><v-btn depressed style="margin-left:30px;margin-top:40px;background:#333;color:#fff" >立即购买</v-btn></a>
+              <v-img style="cursor:pointer" @click="godetail()" src="@/assets/img/params/DELTA Pro.jpg" contain width="150" height="250" />
+              <a href="http://mtw.so/65XGKR" target="_blank"><v-btn depressed style="margin-left:30px;margin-top:40px;background:#333;color:#fff" >立即购买</v-btn></a>
+              <span @click="godetail()" style="display:inline-block;margin-left:50px;margin-top:20px;cursor:pointer">了解详情</span>
             </v-col>
           </v-row>
           <v-row class="line py-16">
@@ -577,7 +583,13 @@ export default {
         to: { path: '/delta' }
       }
     ]
-  })
+  }),
+  methods: {
+    godetail () {
+      const routerJump = this.$router.resolve({ path: '/deltadetail' })
+      window.open(routerJump.href, '_blank')
+    }
+  }
 }
 
 </script>

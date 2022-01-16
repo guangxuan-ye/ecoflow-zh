@@ -169,8 +169,8 @@ export default {
       { title: '企业愿景', name: 'brandStory', hash: 'hope' }
     ],
     productItems: [
-      { title: '德 DELTA系列', name: 'productCenter', hash: 'delta' },
-      { title: '睿 RIVER系列', name: 'productCenter', hash: 'river' },
+      { title: '德 DELTA系列', name: 'productCenter', hash: 'deltaproduct' },
+      { title: '睿 RIVER系列', name: 'productCenter', hash: 'riverproduct' },
       { title: '配件系列', name: 'productCenter', hash: 'fit' }
     ],
     contactItems: [

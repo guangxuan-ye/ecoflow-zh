@@ -14,6 +14,7 @@
         :key="idx"
         :src="item.src[0]"
         :href="item.link"
+        target="_blank"
         class="carouselItem"
       >
       </v-carousel-item>
@@ -95,7 +96,7 @@
                 </div>
                 <!-- 了解更多 -->
                 <div class="pl-6">
-                  <router-link :to="{path: '/deltaproduct'}">
+                  <router-link :to="{path: '/deltaproduct'}" target="_blank">
                     <span class="ch_title d-block h6 black--text text--lighten-1 mt-8">了解更多 &gt;</span>
                   </router-link>
                 </div>
@@ -139,7 +140,7 @@
                 </div>
                 <!-- 了解更多 -->
                 <div class="pl-6">
-                  <router-link :to="{path: '/riverproduct'}">
+                  <router-link :to="{path: '/riverproduct'}" target="_blank">
                     <span  class="ch_title d-block h6 black--text text--lighten-1 mt-8">了解更多 &gt;</span>
                   </router-link>
                 </div>
@@ -211,22 +212,22 @@ export default {
     items: [
       {
         src: [require('@/assets/img/home/banner.jpg')],
-        link: 'https://cn.ecoflow.com/delta'
+        link: '/deltadetail'
       },
       {
         src: [require('@/assets/img/home/banner0.jpg')],
-        link: 'https://cn.ecoflow.com/river'
+        link: '/riverdetail'
       },
       // {
       //   src: [require('@/assets/img/home/banner1.jpg')]
       // },
       {
         src: [require('@/assets/img/home/banner2.jpg')],
-        link: 'https://cn.ecoflow.com/delta'
+        link: '/deltadetail'
       },
       {
         src: [require('@/assets/img/home/banner3.jpg')],
-        link: 'https://cn.ecoflow.com/delta'
+        link: '/deltadetail'
       }
     ],
     delta: [

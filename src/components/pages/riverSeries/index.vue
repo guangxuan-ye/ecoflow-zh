@@ -20,7 +20,7 @@
             <span class="newproduct mb-1">[新品上市]</span>
             <span class="delname mb-1">睿 RIVER MAX PLUS</span>
             <span class="deldescribe mb-4">【核心快充技术】真快充1.6小时充满，不伤电池。高效版升级不加价，巨容量更持久，多输出接口，纯正弦波，8重安全防护，适用户外露营车载自驾游应急储能用电</span>
-            <span class="delMore">了解详情 <img src="@/assets/img/deltaSeries/go.png"/></span>
+            <span class="delMore" @click="godetail()">了解详情 <img src="@/assets/img/deltaSeries/go.png"/></span>
           </div>
         </div>
         <!-- right -->
@@ -48,7 +48,7 @@
           >
           </v-img>
           <span style="font-size:24px">睿 RIVER mini</span>
-          <span style="font-size:18px;cursor:pointer" class="mb-6">了解详情</span>
+          <span style="font-size:18px;cursor:pointer" class="mb-6" @click="godetail()">了解详情</span>
         </v-card>
         <v-card
           class="delBig scro_anima_river_2"
@@ -62,7 +62,7 @@
           >
           </v-img>
           <span style="font-size:24px">睿 RIVER mini</span>
-          <span style="font-size:18px;cursor:pointer" class="mb-6">了解详情</span>
+          <span style="font-size:18px;cursor:pointer" class="mb-6" @click="godetail()">了解详情</span>
         </v-card>
       </div>
       <!-- 展示三 -->
@@ -84,7 +84,7 @@
             <span class="newproduct mb-1">[新品上市]</span>
             <span class="delname mb-1">睿 RIVER MAX PLUS</span>
             <span class="deldescribe mb-4">【核心快充技术】真快充1.6小时充满，不伤电池。高效版升级不加价，巨容量更持久，多输出接口，纯正弦波，8重安全防护，适用户外露营车载自驾游应急储能用电</span>
-            <span class="delMore">了解详情 <img src="@/assets/img/deltaSeries/go.png"/></span>
+            <span class="delMore" @click="godetail()">了解详情 <img src="@/assets/img/deltaSeries/go.png"/></span>
           </div>
         </div>
         <!-- right -->
@@ -111,6 +111,12 @@ export default {
   },
   mounted () {
     this.animationRiver()
+  },
+  methods: {
+    godetail () {
+      const templink = this.$router.resolve({ path: '/riverdetail' })
+      window.open(templink.href, '_blank')
+    }
   }
 }
 </script>
