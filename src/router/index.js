@@ -58,6 +58,26 @@ const router = new Router({
         import('../components/pages/deltaDetail/detailIndex.vue')
     },
     {
+      path: '/deltaminidetail',
+      component: () =>
+        import('../components/pages/deltaDetail/detailIndex.vue')
+    },
+    {
+      path: '/deltaprodetail',
+      component: () =>
+        import('../components/pages/deltaDetail/detailDeltaProIndex.vue')
+    },
+    {
+      path: '/delta1300detail',
+      component: () =>
+        import('../components/pages/deltaDetail/detailDelta1300Index.vue')
+    },
+    {
+      path: '/deltamaxdetail',
+      component: () =>
+        import('../components/pages/deltaDetail/detailDeltaMaxIndex.vue')
+    },
+    {
       path: '/river', // river系列参数
       component: () =>
         import('../components/pages/river/index.vue')
@@ -146,6 +166,21 @@ const router = new Router({
       path: '/m_deltadetail',
       component: () =>
         import('../components/pages/MobileViews/detailproductDelta.vue')
+    },
+    {
+      path: '/m_deltaprodetail',
+      component: () =>
+        import('../components/pages/MobileViews/detailproductDeltaPro.vue')
+    },
+    {
+      path: '/m_delta1300detail',
+      component: () =>
+        import('../components/pages/MobileViews/detailproductDelta1300.vue')
+    },
+    {
+      path: '/m_deltamaxdetail',
+      component: () =>
+        import('../components/pages/MobileViews/detailproductDeltaMax.vue')
     },
     {
       path: '/m_riverdetail',

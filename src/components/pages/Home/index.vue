@@ -212,7 +212,7 @@ export default {
     items: [
       {
         src: [require('@/assets/img/home/banner.jpg')],
-        link: '/deltadetail'
+        link: '/deltaprodetail'
       },
       {
         src: [require('@/assets/img/home/banner0.jpg')],
@@ -223,7 +223,7 @@ export default {
       // },
       {
         src: [require('@/assets/img/home/banner2.jpg')],
-        link: '/deltadetail'
+        link: '/deltamaxdetail'
       },
       {
         src: [require('@/assets/img/home/banner3.jpg')],
