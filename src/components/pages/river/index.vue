@@ -24,22 +24,22 @@
              <v-col>
               <v-img  @click="godetail()" src="@/assets/img/params/RIVER 600 mini.png" style="margin-left:-20px;cursor:pointer" contain width="272"  height="210" />
               <a href="http://mtw.so/6lGwDY" target="_blank"><v-btn depressed style="margin-left:70px;margin-top:40px;background:#333;color:#fff" >立即购买</v-btn></a>
-              <span @click="godetail()" style="display:block;margin-left:80px;margin-top:20px;cursor:pointer">了解详情</span>
+              <span @click="godetail()" style="display:block;margin-left:80px;margin-top:20px;cursor:pointer">了解更多</span>
             </v-col>
             <v-col>
               <v-img  @click="godetail()" src="@/assets/img/params/RIVER 600.png" style="margin-left:-20px;cursor:pointer"  contain width="272" height="210" />
               <a href="http://mtw.so/5v339Q" target="_blank"><v-btn depressed style="margin-left:70px;margin-top:40px;background:#333;color:#fff" >立即购买</v-btn></a>
-              <span @click="godetail()" style="display:block;margin-left:80px;margin-top:20px;cursor:pointer">了解详情</span>
+              <span @click="godetail()" style="display:block;margin-left:80px;margin-top:20px;cursor:pointer">了解更多</span>
             </v-col>
             <v-col>
               <v-img  @click="godetail()" src="@/assets/img/params/RIVER 600 MAX.png" style="margin-left:-20px;cursor:pointer"  contain width="272" height="210"/>
               <a href="http://mtw.so/65XGiN" target="_blank"><v-btn depressed style="margin-left:70px;margin-top:40px;background:#333;color:#fff" >立即购买</v-btn></a>
-              <span @click="godetail()" style="display:block;margin-left:80px;margin-top:20px;cursor:pointer">了解详情</span>
+              <span @click="godetail()" style="display:block;margin-left:80px;margin-top:20px;cursor:pointer">了解更多</span>
             </v-col>
             <v-col>
               <v-img  @click="godetail()" src="@/assets/img/params/RIVER 600 PRO.png" style="margin-left:-20px;cursor:pointer"  contain width="272" height="210"/>
               <a href="http://mtw.so/5v33k0" target="_blank"><v-btn depressed style="margin-left:80px;margin-top:40px;background:#333;color:#fff" >立即购买</v-btn></a>
-              <span @click="godetail()" style="display:block;margin-left:80px;margin-top:20px;cursor:pointer">了解详情</span>
+              <span @click="godetail()" style="display:block;margin-left:80px;margin-top:20px;cursor:pointer">了解更多</span>
             </v-col>
           </v-row>
 
