@@ -89,9 +89,6 @@
               src='@/assets/img/deltaSeries/cn-ecoflow-dalta-pro-detail-image-10.png'
             >
             <img
-              src='@/assets/img/deltaSeries/cn-ecoflow-dalta-pro-detail-image-11.png'
-            >
-            <img
               src='@/assets/img/deltaSeries/cn-ecoflow-dalta-pro-detail-image-12.png'
             >
           </div>
