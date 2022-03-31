@@ -170,7 +170,7 @@ export default {
     ],
     productItems: [
       { title: '德 DELTA系列', name: 'productCenter', hash: 'deltaproduct' },
-      { title: '睿 RIVER系列', name: 'productCenter', hash: 'riverproduct' },
+      // { title: '睿 RIVER系列', name: 'productCenter', hash: 'riverproduct' },
       { title: '配件系列', name: 'productCenter', hash: 'fit' }
     ],
     contactItems: [

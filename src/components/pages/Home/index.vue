@@ -214,10 +214,10 @@ export default {
         src: [require('@/assets/img/home/banner.jpg')],
         link: '/deltaprodetail'
       },
-      {
-        src: [require('@/assets/img/home/banner0.jpg')],
-        link: '/riverdetail'
-      },
+      // {
+      //   src: [require('@/assets/img/home/banner0.jpg')],
+      //   link: '/riverdetail'
+      // },
       // {
       //   src: [require('@/assets/img/home/banner1.jpg')]
       // },
