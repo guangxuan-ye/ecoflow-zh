@@ -6,7 +6,8 @@
     </div>
     <div id="river" class="mt-2">
       <!-- href="http://mtw.so/6tcJaj" -->
-      <a style="color: #fff" @click="goproductRiver()"><v-img src="@/assets/img/mobile/river.jpg" /></a>
+<!--      <a style="color: #fff" @click="goproductRiver()"><v-img src="@/assets/img/mobile/river.jpg" /></a>-->
+      <a style="color: #fff" href="javascript:void(0);"><v-img src="@/assets/img/mobile/river.jpg" /></a>
     </div>
   </div>
 </template>

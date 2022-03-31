@@ -140,9 +140,10 @@
                 </div>
                 <!-- 了解更多 -->
                 <div class="pl-6">
-                  <router-link :to="{path: '/riverproduct'}" target="_blank">
+<!--                  <router-link :to="{path: '/riverproduct'}" target="_blank">-->
+<!--                    <span  class="ch_title d-block h6 black&#45;&#45;text text&#45;&#45;lighten-1 mt-8">了解更多 &gt;</span>-->
+<!--                  </router-link>-->
                     <span  class="ch_title d-block h6 black--text text--lighten-1 mt-8">了解更多 &gt;</span>
-                  </router-link>
                 </div>
               </v-card>
               <!-- 太阳能板系列 -->
